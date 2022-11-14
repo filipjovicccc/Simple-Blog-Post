@@ -3,25 +3,14 @@ import Blog from "./Blog";
 
 const BlogList = (props) => {
   return (
-    <div>
+    <div className="blog-list">
       {props.items.map((item) => {
-        return (
-          <>
-            <Blog
-              key={item.id}
-              id={item.id}
-              title={item.title}
-              text={item.text}
-              icons={item.icons}
-              img={item.img}
-            />
-          </>
-        );
+        return <Blog key={item.id} item={item} setItems={props.setItems} />;
       })}
     </div>
   );
 };
-
-export default BlogList;
 {
 }
+
+export default BlogList;

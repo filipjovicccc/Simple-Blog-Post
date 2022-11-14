@@ -1,18 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineStar } from "react-icons/ai";
 
 function Blog(props) {
-  return (
-    <article>
-      <h1>{props.title}</h1>
-      <p>{props.text}</p>
+  const handleToggleFavorites = () => {
+    const changeCurrentObject = {
+      ...props.item,
+      isFavorite: !props.item.isFavorite,
+    };
+    props.setItems((prevItems) => {
+      const itemsWithouCurrent = prevItems.map((item) => {
+        if (item.id === props.item.id) {
+          return changeCurrentObject;
+        }
+        return item;
+      });
 
-      <p>
-        <AiOutlineStar />
-      </p>
-      <div>
-        <img src={props.img} alt="" />
+      return itemsWithouCurrent;
+    });
+  };
+
+  const iconStyle = props.item.isFavorite
+    ? { fill: "#ff0000", fontSize: "1.5em" }
+    : { fontSize: "1.5em" };
+
+  return (
+    <article className="article">
+      <img className="images" src={props.item.img} alt="" />
+      <div className="section">
+        <h2>{props.item.title} </h2>
+        <AiOutlineStar style={iconStyle} onClick={handleToggleFavorites} />{" "}
       </div>
+
+      <p>{props.item.text}</p>
     </article>
   );
 }

@@ -7,39 +7,39 @@ import image4 from "../images/image-4.avif";
 const blogs = [
   {
     id: 1,
-    title: "my first blog post",
+    title: "My first blog post",
     icons: AiOutlineStar,
     text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestias voluptate mollitia officia beatae veniam optio aperiam! Vitae incidunt enim quod ad, perferendis aperiam iusto maiores earum quos obcaecati sunt.
-  Obcaecati, unde in harum sit fuga eos odio neque ab facilis dignissimos ipsam repellat dolor repellendus illum nemo iusto voluptate qui nobis vero eius inventore asperiores necessitatibus. Nesciunt, culpa officia.
-  Incidunt dolorem id possimus in consectetur deserunt perspiciatis repellendus distinctio! Magni fugiat voluptas, iusto rerum error, reprehenderit officiis repellat ducimus quisquam assumenda, voluptates pariatur in voluptatum corporis aliquam impedit voluptatibus.`,
+    Obcaecati, unde in harum sit fuga eos odio neque .`,
     img: image1,
+    isFavorite: false,
   },
   {
     id: 2,
     title: "my second blog post",
     icons: AiOutlineStar,
     text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestias voluptate mollitia officia beatae veniam optio aperiam! Vitae incidunt enim quod ad, perferendis aperiam iusto maiores earum quos obcaecati sunt.
-    Obcaecati, unde in harum sit fuga eos odio neque ab facilis dignissimos ipsam repellat dolor repellendus illum nemo iusto voluptate qui nobis vero eius inventore asperiores necessitatibus. Nesciunt, culpa officia.
-    Incidunt dolorem id possimus in consectetur deserunt perspiciatis repellendus distinctio! Magni fugiat voluptas, iusto rerum error, reprehenderit officiis repellat ducimus quisquam assumenda, voluptates pariatur in voluptatum corporis aliquam impedit voluptatibus.`,
+    Obcaecati, unde in harum sit fuga eos odio n.`,
     img: image2,
+    isFavorite: false,
   },
   {
     id: 3,
-    title: "my third blog post",
+    title: "My third blog post",
     icons: AiOutlineStar,
     text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur numquam eos delectus necessitatibus? Minima, aliquam, officia incidunt inventore veritatis obcaecati harum, rerum ab asperiores iste totam corporis alias accusantium eligendi.
-    Eaque porro velit cumque reprehenderit veritatis fuga saepe aliquam distinctio commodi debitis. Ipsam, dolorum ex assumenda perspiciatis doloribus consequuntur. Quibusdam facilis autem expedita cum praesentium iste veniam amet dolorum. Dicta.
-    Molestiae incidunt necessitatibus tempore iure totam voluptate accusantium laborum amet temporibus dolores, adipisci nihil magni illum minus, ex voluptates saepe, quaerat nobis suscipit recusandae quam! Ex, illum! Quas, illum sint.`,
+    Eaque porro velit cumque reprehenderit. `,
     img: image3,
+    isFavorite: true,
   },
   {
     id: 4,
     title: "my fourth blog post",
     icons: AiOutlineStar,
     text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestias voluptate mollitia officia beatae veniam optio aperiam! Vitae incidunt enim quod ad, perferendis aperiam iusto maiores earum quos obcaecati sunt.
-    Obcaecati, unde in harum sit fuga eos odio neque ab facilis dignissimos ipsam repellat dolor repellendus illum nemo iusto voluptate qui nobis vero eius inventore asperiores necessitatibus. Nesciunt, culpa officia.
-    Incidunt dolorem id possimus in consectetur deserunt perspiciatis repellendus distinctio! Magni fugiat voluptas, iusto rerum error, reprehenderit officiis repellat ducimus quisquam assumenda, voluptates pariatur in voluptatum corporis aliquam impedit voluptatibus.`,
+    Obcaecati, unde in harum sit .`,
     img: image4,
+    isFavorite: true,
   },
 ];
 
