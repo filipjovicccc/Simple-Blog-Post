@@ -8,14 +8,13 @@ function Blog(props) {
       isFavorite: !props.item.isFavorite,
     };
     props.setItems((prevItems) => {
-      const itemsWithouCurrent = prevItems.map((item) => {
+      const itemsWithoutCurrent = prevItems.map((item) => {
         if (item.id === props.item.id) {
           return changeCurrentObject;
         }
         return item;
       });
-
-      return itemsWithouCurrent;
+      return itemsWithoutCurrent;
     });
   };
 
