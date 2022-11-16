@@ -5,6 +5,8 @@ import { useState } from "react";
 import NewBlog from "./components/NewBlog";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
   const [items, setItems] = useState(blogs);
 
   const addNewBlogsHanlder = (newItems) => {
@@ -18,14 +20,28 @@ function App() {
 
     return filteredItems;
   };
+
+  const createBlogModal = () => {
+    setShowModal(true);
+  };
+
+  const closeBlogModal = () => [setShowModal(false)];
   return (
     <div className="App">
       <h1>My blog</h1>
-      <button>Create Blog</button>
-      <NewBlog onAdd={addNewBlogsHanlder} />
 
+      {showModal ? (
+        <NewBlog closeBlog={closeBlogModal} onAdd={addNewBlogsHanlder} />
+      ) : (
+        <button
+          onClick={createBlogModal}
+          type="button"
+          className="btn btn-primary"
+        >
+          Create Blog
+        </button>
+      )}
       <BlogList setItems={setItems} items={items} />
-
       <h2>Favorites:</h2>
 
       <BlogList setItems={setItems} items={getFavorites(items)} />

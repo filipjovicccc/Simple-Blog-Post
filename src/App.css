@@ -1,3 +1,4 @@
+
 .article{
 
   width: 300px;
@@ -5,8 +6,9 @@
   text-align: left;
 }
 
-.article h1{
+.article h2{
   text-align: centar;
+
 }
 
 
@@ -30,15 +32,31 @@
 .section h2{
   margin-right: 20px;
 }
+ .btn-section {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    width: 200px;
+
+  
+    
+}
+
+.btn {
+  background-color: rgb(0, 34, 255);
+  width: 150px;
+  height: 38px;
+  border-radius: 7px 7px 7px 7px;
+  color: white;
+}
 
 
 @media(max-width:778px){
-  .App h2{ margin-right: 225px;}
+
 }
 
 
 @media(max-width:500px){
-  .App h2{ margin-right: 170px;
-  position: fixed;}
+ .article{width: 185px;}
 }
 

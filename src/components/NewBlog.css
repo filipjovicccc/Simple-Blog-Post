@@ -23,3 +23,12 @@
     border: 1px solid #ccc;
     width: 20rem;
     max-width: 100%}
+
+    .btn {
+        background-color: rgb(0, 34, 255);
+        width: 150px;
+        height: 38px;
+        border-radius: 7px 7px 7px 7px;
+        color: white;
+        margin-right: 15px;
+      }

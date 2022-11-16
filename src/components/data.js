@@ -16,7 +16,7 @@ const blogs = [
   },
   {
     id: 2,
-    title: "my second blog post",
+    title: "My second blog post",
     icons: AiOutlineStar,
     text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestias voluptate mollitia officia beatae veniam optio aperiam! Vitae incidunt enim quod ad, perferendis aperiam iusto maiores earum quos obcaecati sunt.
     Obcaecati, unde in harum sit fuga eos odio n.`,
