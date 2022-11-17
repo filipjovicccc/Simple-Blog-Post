@@ -35,7 +35,7 @@ function NewBlog(props) {
       <form className="form-control" onSubmit={submitHandler}>
         <label>Enter title name</label>
         <input ref={titleRef} type="text" name="text" />
-        <label>Enter text name</label>
+        <label>Enter blog text here</label>
         <input ref={textRef} type="text" />
         <label>Enter img url</label>
         <input ref={imgUrl} type="url" />
